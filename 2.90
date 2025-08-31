@@ -1,0 +1,17 @@
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Collecting pyttsx3
+  Downloading pyttsx3-2.99-py3-none-any.whl.metadata (6.2 kB)
+Collecting comtypes (from pyttsx3)
+  Downloading comtypes-1.4.12-py3-none-any.whl.metadata (7.3 kB)
+Collecting pypiwin32 (from pyttsx3)
+  Downloading pypiwin32-223-py3-none-any.whl.metadata (236 bytes)
+Collecting pywin32 (from pyttsx3)
+  Downloading pywin32-311-cp39-cp39-win_amd64.whl.metadata (10 kB)
+Downloading pyttsx3-2.99-py3-none-any.whl (32 kB)
+Downloading comtypes-1.4.12-py3-none-any.whl (253 kB)
+Downloading pypiwin32-223-py3-none-any.whl (1.7 kB)
+Downloading pywin32-311-cp39-cp39-win_amd64.whl (9.6 MB)
+   ---------------------------------------- 9.6/9.6 MB 322.5 kB/s  0:00:30
+Installing collected packages: pywin32, pypiwin32, comtypes, pyttsx3
+
+Successfully installed comtypes-1.4.12 pypiwin32-223 pyttsx3-2.99 pywin32-311

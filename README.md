@@ -1,101 +1,31 @@
-# Face-Recognition-Attendance-System
-The Face Recognition Attendance System is a Python-based desktop application designed to automate student/staff attendance using real-time face recognition. It combines computer vision (OpenCV) with a simple and intuitive Tkinter GUI, ensuring attendance is seamless, accurate, and paperless.
+# Simple Face Recognition Attendance System
 
-## ✨ Features
+A single-window Tkinter app with voice prompts (offline, via pyttsx3). Buttons:
+- Take Attendance
+- Check Attendance
+- Check List of Users
+- Delete User
+- Delete Attendance
+- Enroll New User
+- Close
 
-* 🎥 **Take Attendance**: Detects and recognizes registered users via webcam.
-* 📝 **Enroll New User**: Add user details (ID, Name, Sex, Department) and capture face samples.
-* 🏋️ **Train Model**: Train the LBPH recognizer with the captured faces.
-* ✅ **Check Attendance**: View records with Date, Time, ID, and Name.
-* 👥 **Check List of Users**: View all registered users.
-* ❌ **Delete User / Delete Attendance**: Manage user records and attendance logs.
-* 📤 **Export Attendance**: Export logs to **Excel (.xlsx)** or **PDF (.pdf)** for reporting.
-* 🔊 **Voice Feedback**: Built-in TTS to guide actions (using pyttsx3).
-* 📌 **Project Info Section**: Displays group members and supervisor info on the home page.
-
-
-## 🛠️ Tech Stack
-
-* **Python 3.9+**
-* **OpenCV** (face detection & recognition)
-* **Tkinter + ttkbootstrap** (GUI)
-* **pyttsx3** (Text-to-Speech)
-* **Pandas** (data handling)
-* **OpenPyXL** (Excel export)
-* **ReportLab** (PDF export)
-
----
-
-## 📂 Project Structure
-
-```
-face_recognition_attendance/
-│
-├── app/
-│   ├── backend.py        # Face capture, training, recognition
-│   ├── ui.py             # Main GUI
-│   ├── utils.py          # Utilities (logging, CSV handling, TTS)
-│   ├── config.py         # Configurations
-│   ├── exporter.py       # Export to Excel & PDF
-│   ├── dataset/          # Captured face images
-│   ├── models/           # Trained model files
-│   └── users.csv         # User records
-│
-├── requirements.txt      # Dependencies
-└── README.md             # Project description
+## Install
+```bash
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# Linux/macOS
+# source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
----
+## Run
+```bash
+python -m app.ui
+```
 
-## 📸 Screenshots (Optional)
-
-*Add screenshots of the home page, attendance list, and face recognition overlay here.*
-
----
-
-## 🚀 Installation & Usage
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/ArcRobot-Researchcenter/face_recognition_attendance.git
-   cd face_recognition_attendance
-   ```
-
-2. Create and activate a virtual environment:
-
-   ```bash
-   python -m venv .venv
-   .venv\Scripts\activate   # Windows
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Run the app:
-
-   ```bash
-   python -m app.ui
-   ```
-
----
-
-## 📤 Exported Reports
-
-* **Excel**: Easy to analyze attendance data in tabular form.
-* **PDF**: Printable reports for official submission.
-
-## 📌 Future Improvements
-
-* Date & User filters for export
-* Cloud storage integration (Google Drive/Sheets)
-* Web dashboard
-
----
-
-## 📜 License
-
-This project is open-source under the MIT License.
+## Data Files
+- `app/users.csv`: id,name,sex,department
+- `app/attendance.csv`: date,time,id,name (auto-created)
+- `app/dataset/<id>_<Name>/*.png`: captured samples
+- `app/models/lbph_model.yml`: trained model
