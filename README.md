@@ -11,7 +11,6 @@ It combines **computer vision (OpenCV)** with a simple and intuitive **Tkinter G
 ## 📽️ Watch YouTube Demo
 
 [![Watch the video](https://img.youtube.com/vi/sLOEOvR0ZFs/0.jpg)](https://www.youtube.com/watch?v=sLOEOvR0ZFs)
-https://youtu.be/sLOEOvR0ZFs?si=0ZX5vPxe2lAkNWBV
 
 
 ## Download Full Project with VENV (virtual environment)** 
